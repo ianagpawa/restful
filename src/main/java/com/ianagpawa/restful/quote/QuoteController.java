@@ -43,7 +43,7 @@ public class QuoteController {
         repository.deleteById(id);
     }
 
-    @GetMapping("/random")
+    @GetMapping("/quotes/random")
     Quote random() {
         List<Quote> allQuotes = repository.findAll();
         int index = (new Random()).nextInt(allQuotes.size());

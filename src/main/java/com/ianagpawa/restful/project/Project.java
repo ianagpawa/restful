@@ -1,6 +1,4 @@
-package com.ianagpawa.restful.projects;
-
-import com.ianagpawa.restful.quote.Quote;
+package com.ianagpawa.restful.project;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
