@@ -27,9 +27,9 @@ public class QuoteController {
     Quote replaceQuote(@RequestBody Quote newQuote, @PathVariable Long id) {
         return repository.findById(id)
                 .map(quote -> {
-                    quote.setName(newQuote.getName());
-                    quote.setContent(newQuote.getContent());
-                    quote.setSource(newQuote.getSource());
+                    if (!newQuote.getName().isEmpty()) { quote.setName(newQuote.getName()); }
+                    if (!newQuote.getContent().isEmpty()) { quote.setContent(newQuote.getContent()); }
+                    if (!newQuote.getSource().isEmpty()) { quote.setSource(newQuote.getSource()); }
                     return repository.save(quote);
                 })
                 .orElseGet(() -> {
