@@ -25,7 +25,8 @@ public class QuoteController {
 
     @PutMapping("/quotes/{id}")
     Quote replaceQuote(@RequestBody Quote newQuote, @PathVariable Long id) {
-        return repository.findById(id)
+        return repository
+                .findById(id)
                 .map(quote -> {
                     if (!newQuote.getName().isEmpty()) { quote.setName(newQuote.getName()); }
                     if (!newQuote.getContent().isEmpty()) { quote.setContent(newQuote.getContent()); }
@@ -39,7 +40,7 @@ public class QuoteController {
     }
 
     @DeleteMapping("/quotes/{id}")
-    void deleteEmployee(@PathVariable Long id) {
+    void deleteQuote(@PathVariable Long id) {
         repository.deleteById(id);
     }
 
