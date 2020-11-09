@@ -1,9 +1,32 @@
 [
   {
+    "name": "Newsfeed",
+    "shortName": "newsfeed",
+    "description": "News feed app ",
+    "github": "https://github.com/ianagpawa/newsfeed",
+    "url": "https://ianagpawa.github.io/newsfeed/"
+  }, {
+    "name": "Personal Blog",
+    "shortName": "blog",
+    "description": "Personal Blog",
+    "github": "https://github.com/ianagpawa/blog",
+    "url": "https://xenodochial-edison-d8fc22.netlify.app/"
+  }, {
+    "name": "Weather Forecast",
+    "shortName": "weather",
+    "description": "Weather Forecast",
+    "github": "https://github.com/ianagpawa/weather",
+    "url": "https://ianagpawa.github.io/weather/"
+  }, {
     "name": "Personal Portfolio",
     "shortName": "portfolio",
     "description": "Personal Portfolio",
     "github": "https://github.com/ianagpawa/portfolio",
     "url": "https://ianagpawa.github.io/portfolio"
+  }, {
+    "name": "Centos Apache Dockerfile",
+    "shortName": "centos-httpd",
+    "description": "Apache web server on a Centos OS",
+    "github": "https://github.com/ianagpawa/centos-httpd"
   }
 ]
